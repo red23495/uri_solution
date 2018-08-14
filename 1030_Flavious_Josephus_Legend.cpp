@@ -4,7 +4,7 @@ using namespace std;
 typedef unsigned int ui;
 
 int mod(int n, int m){
-    return (n<0)?(n%m)+m:(n%m);
+    return (n<0)?((n%m)+m)%m:(n%m);
 }
 
 int jos(int start, int total, int gap){
